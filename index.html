@@ -1,291 +1,147 @@
 <!DOCTYPE>
 <html>
-  <head>
+
+<head>
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="script.js">
+  </script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<style>
-    h1{
-  color:#d3d3d3 !important;
-}
 
-#catch_me{
-  font-family:'Montserrat', sans-serif;
- 
-  margin-up:10%;
-  font-size:30pt;
-}
-
-.jumbotron{
-  background-color:indigo !important;
-}
-
-.navbar-default {
-  background-color:#9c1eea;
-  border-color: #890cd2;
-  border-width:0px;
-}
-
-li>a:hover{
-  color:#00008B	!important;
-}
-  li>a{
-  color:black	 !important;
-}
-
-.navbar-default .navbar-brand {
-  color:black;
-}
-.navbar-default .navbar-brand:hover {
-  color: #00008B;
- 
-}
-
-
-.fa-heart{
- color:red; 
-}
-
-.active a {
-  background-color:#3d0370 !important;
-  
-}
-#projects{
-  font-family: 'Montserrat', sans-serif;
-  font-size:25pt;
-}
-p.info{
-  font-size:14pt;
-}
-#about_me{
-  font-size:20pt;
-  font-family:'Oswald',sans-serif;
-}
-p.details{
-  font-size:10pt;
-  font-color:grey;
-}
-.myPic{
-  border-radius:50%;
-  width:300px;
-}
-#role h2{
-  margin-top:80px;
-  font-size:30pt;
-}
-.thumbnail{
-  border-width:5px;
-  border-color:black;
-  border-radius:10px;
-  margin-left:30%;
- 
-}
-
-
-
-.proj_row{
-  padding:20px;
-}
-
-progress-bar-success{
-  border-width:20px;
-  border-color:#006400;
-}
-
-
-</style>
-
-
-
-<body data-spy="scroll" target=".navbar" data-offset="50">
+<body data-spy:"scroll" data-target="#myNav">
+  <div id="myNav">
     <nav class="navbar navbar-default navbar-fixed-top">
-
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#"> Omar's Site</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#head">Home</a></li>
-            <li><a href="#skills">Key Skills</a></li>
-            <li><a href="#projects">My Projects</a></li>
-        </ul>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#head"> Omar's Site</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li id="wow"><a href="#head">Home</a></li>
+        <li><a href="#skills">Key Skills</a></li>
+        <li><a href="#projects">My Projects</a></li>
+      </ul>
     </nav>
-
-    <div class="jumbotron" id="head">
-        <div class="container-fluid">
-            <h1 class="text-center" style="margin-top:30px;">Omar Hossam</h1>
-<div class="row">
-    <div class="col-md-4">
-        <img src="https://s24.postimg.org/sqqxvber9/pic.jpg" class="img-responsive myPic "></img>
-    </div>
-    <div class="col-md-8" id="role">
-        <h2 class=" text-danger">Computer Science Student and Web-Developer </h2>
-        <br>
-        <p class="text-primary" id="about_me">Enthusiastic about learning new technologies and ready to do make dem sites and dem apps boy!</p>
-    </div>
-</div>
-</div>
-</div>
-<div class="well" id="skills">
+  </div>
+  <div class="jumbotron" id="head">
     <div class="container-fluid">
-        <h2 class="text-primary text-center" style="font-size:25pt;">
-<u>Key Skills</u>
-</h2>
-<div class="row">
-    <div class="col-md-4">
-        <h3 class="text-info text-center">Java</h3>
-        <div class="progress">
-            <div class="progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"><p class="text-center" style="color:white">70% </p>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-    <h3 class="text-info text-center">PHP</h3>
-    <div class="progress">
-        <div class="progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%"><p class="text-center" style="color:white">50% </p>
-</div>
-</div>
-</div>
-
-<div class="col-md-4">
-    <h3 class="text-info text-center">C/C++</h3>
-    <div class="progress">
-        <div class="progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%"><p class="text-center" style="color:white">40% </p>
-</div>
-</div>
-</div>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h3 class="text-info text-center">MYSQL</h3>
-        <div class="progress">
-            <div class="progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"><p class="text-center" style="color:white">60% </p>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-    <h3 class="text-info text-center">GIT</h3>
-    <div class="progress">
-        <div class="progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%"><p class="text-center" style="color:white">50% </p>
-</div>
-</div>
-</div>
-
-<div class="col-md-4">
-    <h3 class="text-info text-center">Android Development</h3>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <div class="progress">
-        <div class="progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%"><p class="text-center" style="color:white">50% </p>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-<div class="container-fluid well text-center" id="projects">
+      <h1 class="text-center" style="margin-top:30px;">Omar Hossam</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="https://s24.postimg.org/sqqxvber9/pic.jpg" class="img-responsive myPic "></img>
+        </div>
+        <div class="col-md-8" id="role">
+          <h2 class=" text-danger">Computer Science Student and Web-Developer </h2>
+          <br>
+          <p class="text-primary" id="about_me">Enthusiastic about learning new technologies and ready to do make dem sites and dem apps boy!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="well" id="skills">
+    <div class="container-fluid">
+      <h2 class="text-primary text-center" style="font-size:25pt;">
+        <u>Key Skills</u>
+      </h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="text-info text-center">Java</h3>
+          <div class="progress">
+            <div class="progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+              <p class="text-center" style="color:white">70% </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-info text-center">PHP</h3>
+          <div class="progress">
+            <div class="progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+              <p class="text-center" style="color:white">50% </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-info text-center">C/C++</h3>
+          <div class="progress">
+            <div class="progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+              <p class="text-center" style="color:white">40% </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="text-info text-center">MYSQL</h3>
+          <div class="progress">
+            <div class="progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+              <p class="text-center" style="color:white">60% </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-info text-center">GIT</h3>
+          <div class="progress">
+            <div class="progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+              <p class="text-center" style="color:white">50% </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-info text-center">Android Development</h3>
+          <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+          <div class="progress">
+            <div class="progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+              <p class="text-center" style="color:white">50% </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid well text-center" id="projects">
     <h2 class="text-center" id="projects"> My Projects</h2>
     <h3 class="text-primary text-center">
-        <u>Websites</u>
+      <u>Websites</u>
     </h3>
     <div class="thumbnail">
-        <img alt="Schools Management System Admin Page" src="https://s27.postimg.org/z5780ycxv/php_site.png"> </img>
-        <p class="info">Schools Management System Admin Page</p>
-        <p class="details">Frontend & Backend</p>
-
+      <img alt="Schools Management System Admin Page" src="https://s27.postimg.org/z5780ycxv/php_site.png"> </img>
+      <p class="info">Schools Management System Admin Page</p>
+      <p class="details">Frontend & Backend</p>
     </div>
     <hr>
     <h3 class="text-success text-center">
-        <u>Android</u>
+      <u>Android</u>
     </h3>
     <div class="thumbnail">
-        <img id="cura" src="https://s28.postimg.org/44v3jnddp/cura_App.png" alt="Cura App"></img>
-        <p class="info">Cura Android App</p>
-        <p class="details">An app for pulse monitoring and hospital reservation.</p>
+      <img id="cura" src="https://s28.postimg.org/44v3jnddp/cura_App.png" alt="Cura App"></img>
+      <p class="info">Cura Android App</p>
+      <p class="details">An app for pulse monitoring and hospital reservation.</p>
     </div>
-</div>
-</div>
-</div>
-</div>
-<!--   <div class="modal" id="fullsize">
-        <span class="close" >&times;</span>
-        <img class="modal-content" id="content_image">
-        <p id="caption"></p>
-
-        </div> -->
-</div>
-
-</div>
-</div>
-</div>
-<div align="center>" <a class="text-success text-center" align="center" id="catch_me">Catch me on</a>
-</div>
-<div class="form-inline" align="middle">
-
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div align="center>" <a class="text-success text-center" align="center" id="catch_me">Catch me on</a>
+  </div>
+  <div class="form-inline" align="middle">
     <a class="btn btn-primary btn-lg" href="https://www.facebook.com/omar.h.ahmed.7" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"> </i>
     </a>
-
     <a class="btn btn-primary btn-lg" href="https://github.com/moar55" target="_blank"> <i class="fa fa-github" aria-hidden="true"> </i>
     </a>
-
     <a class="btn btn-primary btn-lg" target="_blank" href="https://eg.linkedin.com/in/omar-hossam-543830114
 "> <i class="fa fa-linkedin" aria-hidden="true"> </i>
-    </a>
-
-
-</div>
-
-
+      </a>
+  </div>
 </body>
-
-
-<script>
-    $(document).ready(function(){
-  $(".thumbnail").each(function(){
-    var thumb = $(this);
-   $(this).children().each(function() {
-     if($(this).is("img")){
-     console.log("in here boys");
-     var width=$(this).width();
-     var height=$(this).height();
-
-     if(width>height){
-         console.log('yo man');
-       thumb.width(600);
-       thumb.height(400);
-     }
-     else if(height>width){
-       thumb.width(300);
-       thumb.height(600);
-       thumb.css({'margin-left':'35%'});
-     }
-     else{
-       thumb.width(600);
-       thumb.height(600);
-       
-     }
-     }
-     
-   });
-     
-  });
-  
-  $('li').click(function(){
-    $('li.active').removeClass('active');
-    $(this).addClass('active');
-    });
-  
-  
-  });
-
-</script>
 <hr>
 <footer>
-    <div align="center">Made with <span class="fa fa-heart"> </span> by Omar Hossam</div>
-
+  <div align="center">Made with <span class="fa fa-heart"> </span> by Omar Hossam</div>
 </footer>
 <html>

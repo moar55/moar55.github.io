@@ -1,10 +1,13 @@
-<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<!DOCTYPE>
+<html>
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 <style>
     h1{
   color:#d3d3d3 !important;
@@ -40,6 +43,10 @@ li>a:hover{
 .navbar-default .navbar-brand:hover {
   color: #00008B;
  
+}
+
+body{
+  background:grey;
 }
 
 .fa-heart{
@@ -81,7 +88,7 @@ p.details{
  
 }
 .thumbnail img{
-  height:86%;
+  height:85%;
   width:100%;
   
 
@@ -223,7 +230,7 @@ progress-bar-success{
 </div>
 </div>
 </div>
-<div alig="center>" <a class="text-success text-center" align="center" id="catch_me">Catch me on</a>
+<div align="center>" <a class="text-success text-center" align="center" id="catch_me">Catch me on</a>
 </div>
 <div class="form-inline" align="middle">
 
@@ -253,7 +260,9 @@ progress-bar-success{
      console.log("in here boys");
      var width=$(this).width();
      var height=$(this).height();
+              alert(width+' '+height);
      if(width>height){
+         console.log('yo man');
        thumb.width(600);
        thumb.height(400);
      }
@@ -297,32 +306,33 @@ progress-bar-success{
   
   });
 
-var modal = document.getElementById('fullsize');
-var captionText = document.getElementById("caption");
-var modalImg=document.getElementById('content_image');
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var images=document.getElementsByClassName('.thumbnail img');
-for (var img in images){
-      console.log('yo man1');
-img.onclick = function(){
-    console.log('yo man');
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+// var modal = document.getElementById('fullsize');
+// var captionText = document.getElementById("caption");
+// var modalImg=document.getElementById('content_image');
+// // Get the image and insert it inside the modal - use its "alt" text as a caption
+// var images=document.getElementsByClassName('.thumbnail img');
+// for (var img in images){
+//       console.log('yo man1');
+//     $(img).on("click", function(){
+//     console.log('yo man');
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+//     captionText.innerHTML = this.alt;
+//     });
 
-}
+// }
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
-}
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() { 
+//     modal.style.display = "none";
+// }
 
 </script>
 <hr>
 <footer>
     <div align="center">Made with <span class="fa fa-heart"> </span> by Omar Hossam</div>
 
-    </footeru
+</footer>
+<html>

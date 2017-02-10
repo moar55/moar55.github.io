@@ -1,0 +1,103 @@
+body{
+  position: relative;
+}
+
+h1 {
+    color: #d3d3d3 !important;
+  }
+  
+  #catch_me {
+    font-family: 'Montserrat', sans-serif;
+    margin-up: 10%;
+    font-size: 30pt;
+  }
+  
+  .jumbotron {
+    background-color: indigo !important;
+  }
+
+
+  .navbar-default {
+    background-color: #9c1eea;
+    border-color: #890cd2;
+    border-width: 0px;
+  }
+  
+  li>a:hover {
+    color: #00008B !important;
+  }
+  
+  li>a {
+    color: black !important;
+  }
+  
+  .navbar-default .navbar-brand {
+    color: black;
+  }
+  
+
+
+  .navbar-default .navbar-brand:hover {
+    color: #00008B;
+  }
+
+  .navbar-default .navbar-brand:active {
+    color:black;
+  }
+  
+  .fa-heart {
+    color: red;
+  }
+
+
+  #percentage{
+   color:white;
+  }
+  .active a {
+    background-color: #3d0370 !important;
+  }
+  
+  #projects {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25pt;
+  }
+  
+  p.info {
+    font-size: 14pt;
+  }
+  
+  #about_me {
+    font-size: 20pt;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  p.details {
+    font-size: 10pt;
+    font-color: grey;
+  }
+  
+  .myPic {
+    border-radius: 50%;
+    width: 300px;
+  }
+  
+  #role h2 {
+    margin-top: 80px;
+    font-size: 30pt;
+  }
+  
+  .thumbnail {
+    border-width: 5px;
+    border-color: black;
+    border-radius: 10px;
+    margin-left: 30%;
+  }
+  
+  .proj_row {
+    padding: 20px;
+  }
+  
+  progress-bar-success {
+    border-width: 20px;
+    border-color: #006400;
+  }
